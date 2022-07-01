@@ -1,14 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
+
 /**
  * main - Entry point
  *
- * Description: Random prints the last digit of number
+ * Description: random prints the last digit of n
  *
- * Returns: always 0 (success)
+ * Return: 0 (success)
  */
-
 int main(void)
 {
 	int n;
