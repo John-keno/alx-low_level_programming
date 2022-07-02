@@ -12,10 +12,11 @@ int main(void)
 {
 	char x;
 
-	for (x = 96; x <= 112, x++;)
+	for (x = 97; x <= 122; x++)
 	{
 		putchar(tolower(x));
 	}
+	putchar('\n');
 	return (0);
 }
 
