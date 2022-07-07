@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * Main  - check the program
+ * main - check the program
+ *
+ * Description: function for printing alphabet
  *
  * Return: always 0 (success)
  */

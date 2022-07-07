@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  *
  * Description: Print all alphabet in lower case using custom library
  *
- * Return: always 0 (success)
+ * Return: Always 0 (success)
  */
+
 int print_alphabet(void)
 {
 	char x;
