@@ -7,28 +7,22 @@
  */
 int _atoi(char *s)
 {
-	unsigned int count, size = 0, x = 0, y = 1, z = 1, k;
+	unsigned int count, x = 0, y = -1, z = 0;
 
-	for (count = 0; *(s + count) != '\0'; count++)
+	for (count = 0; s[count] != '\0'; count++)
 	{
-		if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
-			break;
+		if (s[count] == '-')
+			y = y * -1;
 
-		if (*(s + count) == '-')
-			y *= -1;
-
-		if ((*(s + count) >= '0') && (*(s + count) <= '9'))
+		if ((s[count] >= '0') && (s[count] <= '9'))
 		{
-			if (size > 0)
-				z *= 10;
-			size++;
+			x = x * 10;
+			x -= (s[count] - '0');
+			z = 1;
 		}
-		count++;
+		else if (z == 1)
+			break;
 	}
-	for (k = count - size; k < count; k++)
-	{
-		x = x + ((*(s + k) - 48) * z);
-		z /= 10;
-	}
-	return (x * y);
+	x = x * y;
+	return (x);
 }
