@@ -3,7 +3,7 @@
 /**
  * _abs - Computes the absolute value of an integer.
  *
- * @i: Param number as an integer.
+ * @x: Param number as an integer.
  *
  * Return: absolute value
  */
