@@ -20,8 +20,8 @@ int main(void)
 
 		if (z < x)
 		{
-			putchar(x + '0');
 			putchar(z + '0');
+			putchar(x + '0');
 			if (y < 89)
 			{
 				putchar(44);
