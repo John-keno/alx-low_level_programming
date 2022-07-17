@@ -1,7 +1,8 @@
 #include "main.h"
+
 /**
  * print_square - prints square
- * @size: Param int size (length and width) 
+ * @size: Param int size (length and width)
  * Return: Always void
  */
 void print_square(int size)
@@ -11,7 +12,8 @@ void print_square(int size)
 	if (size <= 0)
 	{
 		_putchar('\n');
-	} else
+	}
+	else
 	{
 		for (x = 0; x < size; x++)
 		{
