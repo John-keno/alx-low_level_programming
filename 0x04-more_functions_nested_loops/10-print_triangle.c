@@ -18,7 +18,6 @@ void print_triangle(int size)
 	x = size - 1;
 	for (z = 0; z < size; z++)
 	{
-		
 		for (y = 0; y < size; y++)
 			_putchar((y < x) ? ' ' : '#');
 		_putchar('\n');
